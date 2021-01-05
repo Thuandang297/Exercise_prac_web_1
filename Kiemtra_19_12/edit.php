@@ -82,9 +82,11 @@
                                 <p class="form-control-static"><input type="text" name="trang_thai" value="<?php echo $id_nv['trang_thai'] ?>"></p>
                             </div>
                             <input type="submit" name="update" class="btn btn-primary" value="Save">
-                            <?php  header('http://localhost/kiemtra_19_12/index.php');?>
+                            <a href="index.php" class="btn btn-default">Cancel</a>    
                             <a href="index.php" class="btn btn-default">Cancel</a>    
                     
+                           
+
                         </form>                       
                     </div>
                 </div>

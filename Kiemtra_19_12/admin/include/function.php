@@ -22,10 +22,17 @@
 		$Cars= mysqli_fetch_assoc($result);
 		return $Cars;
     }
-    function updateEmp($id, $Bienso, $model, $nam, $kieu, $gia_ngay,$gia_thang,$trang_thai){
+    function updateEmp($id,$Bienso, $model, $nam, $kieu, $gia_ngay,$gia_thang,$trang_thai){
         global $conn;
-        $sql = "UPDATE cars SET id='$id', Bienso='$Bienso', nam='$nam',kieu='$kieu',giangay='$gia_ngay',giathang='$gia_thang',trangthai='$trang_thai,
+        $sql = "UPDATE cars SET Bienso='$Bienso',model='$model', nam='$nam',kieu='$kieu',gia_ngay='$gia_ngay',gia_thang='$gia_thang',trang_thai='$trang_thai'
          WHERE id='$id'";
-        mysqli_query($conn, $sql);
+        mysqli_set_charset($conn,'UTF8');
+        if(mysqli_query($conn,$sql))
+        {
+            header("Location:index.php");
+           }
+        else{
+            echo"Khong doi duoc trang";
+        }
     }
 ?>

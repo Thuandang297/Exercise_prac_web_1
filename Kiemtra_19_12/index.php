@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -13,8 +14,9 @@
   </head>
   <body>
   <h1>Dịch vụ thuê xe du lịch</h1>
-    <a href="add.php" class="float-right btn btn-success"><i class="fas fa-user"></i>Thuê xe</a><br/>
+    <a href="add.php" class="float-right btn btn-success"><i class="fas fa-user"></i>Thuê xe</a><br/><!-- Tạo một nút có đường link đến file add.php-->
     <hr/>
+    <!--Tạo bảng hiện thị danh sách ô tô-->
       <table class="table table-striped table-bordered">
           <thead>
               <tr>
@@ -31,11 +33,12 @@
               </tr>
           </thead>
           <tbody>
+          <!--Nhúng file config và function để liên kết và thực hiện các hàm cần có-->
             <?php
              require('admin/include/config.php');
              include('admin/include/function.php');
-             $Cars = getAllEmps();
-             foreach($Cars as $row){
+             $Cars = getAllEmps();//Gán Biến Cars để lưu giá trị các phần tử lấy từ database ra
+             foreach($Cars as $row){//Thực hiện vòng lặp để điền các giá trị từ mysql
          ?>
                    <tr>
                   <td scope="row"><?php echo $row[0];?></td>
@@ -46,6 +49,7 @@
                   <td><?php echo $row[5];?></td>
                   <td><?php echo $row[6];?></td>
                   <td><?php echo $row[7];?></td>
+                  
                
                 
                   <td>

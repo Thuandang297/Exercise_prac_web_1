@@ -38,35 +38,35 @@
                         </div>
                         <div class="form-group">
                             <label>ID</label>
-                            <p class="form-control-static"><input type="text" name="id" value="<?php echo $id_nv['id'] ?>"></p>
+                            <p class="form-control-static"><input type="text" name="id" value="<?php echo $id_nv['id'] ?>" readonly ></p>
                         </div>
                         <div class="form-group">
-                            <label>Bien So</label>
-                            <p class="form-control-static"><input type="text" name="name" value="<?php echo $id_nv['Bienso'] ?>"></p>
+                            <label>BIển Số</label>
+                            <p class="form-control-static"><input type="text" name="name" value="<?php echo $id_nv['Bienso'] ?>"readonly></p>
                         </div>
                         <div class="form-group">
                             <label>Model</label>
-                            <p class="form-control-static"><input type="text" name="description" value="<?php echo $id_nv['model'] ?>"></p>
+                            <p class="form-control-static"><input type="text" name="description" value="<?php echo $id_nv['model'] ?>"readonly></p>
                         </div>
                         <div class="form-group">
-                            <label>nam</label>
-                            <p class="form-control-static"><input type="text" name="salary" value="<?php echo $id_nv['nam'] ?>"></p>
+                            <label>Năm</label>
+                            <p class="form-control-static"><input type="text" name="salary" value="<?php echo $id_nv['nam'] ?>"readonly></p>
                         </div>
                         <div class="form-group">
-                            <label>kieu xe</label>
-                            <p class="form-control-static"><input type="text" name="gender" value="<?php echo $id_nv['kieu'] ?>"></p>
+                            <label>Kiểu xe</label>
+                            <p class="form-control-static"><input type="text" name="gender" value="<?php echo $id_nv['kieu'] ?>"readonly></p>
                         </div>
                         <div class="form-group">
-                            <label>Gia ngay</label>
-                            <p class="form-control-static"><input type="text" name="birthday" value="<?php echo $id_nv['gia_ngay'] ?>"></p>
+                            <label>Giá ngày</label>
+                            <p class="form-control-static"><input type="text" name="birthday" value="<?php echo $id_nv['gia_ngay'] ?>"readonly></p>
                         </div>
                         <div class="form-group">
-                            <label>Gia thang</label>
-                            <p class="form-control-static"><input type="text" name="birthday" value="<?php echo $id_nv['gia_thang'] ?>"></p>
+                            <label>Giá Tháng</label>
+                            <p class="form-control-static"><input type="text" name="birthday" value="<?php echo $id_nv['gia_thang'] ?>"readonly></p>
                         </div>
                         <div class="form-group">
-                            <label>Trang Thai</label>
-                            <p class="form-control-static"><input type="text" name="birthday" value="<?php echo $id_nv['trang_thai'] ?>"></p>
+                            <label>Trạng Thái</label>
+                            <p class="form-control-static"><input type="text" name="birthday" value="<?php echo $id_nv['trang_thai'] ?>"readonly></p>
                         </div>
                         <p><a href="index.php" class="btn btn-primary">Back</a></p>
                     </div>
